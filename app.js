@@ -6,8 +6,8 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
-var users = require('./routes/users');
 var firebase = require('./routes/firebase.js');
+var firebaseAnswer = require('./routes/firebase_answer');
 
 var app = express();
 
@@ -22,10 +22,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
-app.use('/', index);
-app.use('/users', users);
-app.use('/firebase', firebase)
+app.use('/api', index);
+app.use('/firebase', firebase);
+app.use('/firebase/answer', firebaseAnswer)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

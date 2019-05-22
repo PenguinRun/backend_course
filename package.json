@@ -7,13 +7,15 @@
   },
   "dependencies": {
     "body-parser": "~1.18.2",
-    "cookie-parser": "~1.4.3",
+    "cookie-parser": "^1.4.4",
     "debug": "~2.6.9",
     "ejs": "~2.5.7",
-    "express": "~4.15.5",
-    "firebase": "^5.0.4",
-    "firebase-admin": "^5.12.1",
-    "morgan": "~1.9.0",
-    "serve-favicon": "~2.4.5"
+    "express": "^4.17.0",
+    "firebase": "^5.11.1",
+    "firebase-admin": "^5.13.1",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.9.1",
+    "serve-favicon": "~2.4.5",
+    "uuid": "^3.3.2"
   }
 }

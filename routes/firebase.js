@@ -17,7 +17,7 @@ router.use('/',function (req, res, next) {
 router.get('/', function (req, res, next) {
 
     var config = {
-        databaseURL: "" // enter your databaseURL（輸入由firebase中申請到的firebase的databaseURL）
+        databaseURL: "https://test.firebaseio.com/" // enter your databaseURL（輸入由firebase中申請到的firebase的databaseURL）
     };
 
     firebase.initializeApp(config);
