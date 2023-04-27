@@ -5,7 +5,7 @@
 var express = require('express');
 var router = express.Router();
 
-const firebase = require('firebase')
+const firebase = require('firebase-admin')
 const uuidv4 = require('uuid/v4')
 const jwt = require('jsonwebtoken')
 

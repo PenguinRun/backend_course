@@ -5,7 +5,7 @@
 var express = require('express');
 var router = express.Router();
 
-const firebase = require('firebase')
+const firebase = require('firebase-admin')
 
 // set middleware
 router.use('/',function (req, res, next) {
